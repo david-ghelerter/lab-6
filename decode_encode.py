@@ -8,7 +8,7 @@ def encoder(password):
                    res)  # returns a string, source: https://www.simplilearn.com/tutorials/python-tutorial/list-to-string-in-python
 
 
-def decoder(password):
+def decoder(encoded_password):
     pass
 
 
@@ -40,7 +40,7 @@ def main():
             encoded_password = encoder(password)
             print('Your password has been encoded and stored!')
         elif option == 2:  # Decode password
-            pass
+            print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}')
         elif option == 3:  # Quit
             break
 
