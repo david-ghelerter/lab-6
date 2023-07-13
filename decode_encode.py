@@ -8,6 +8,10 @@ def encoder(password):
                    res)  # returns a string, source: https://www.simplilearn.com/tutorials/python-tutorial/list-to-string-in-python
 
 
+def decoder(password):
+    pass
+
+
 def print_menu():
     print('Menu')
     print('-------------')
