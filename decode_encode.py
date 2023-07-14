@@ -9,7 +9,7 @@ def encoder(password):
 
 
 def decoder(encoded_password):
-    pass
+    return ''.join([str(int(d) - 3) for d in encoded_password])
 
 
 def print_menu():
@@ -40,6 +40,7 @@ def main():
             encoded_password = encoder(password)
             print('Your password has been encoded and stored!')
         elif option == 2:  # Decode password
+            decoded_password = decoder(encoded_password)
             print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}')
         elif option == 3:  # Quit
             break
